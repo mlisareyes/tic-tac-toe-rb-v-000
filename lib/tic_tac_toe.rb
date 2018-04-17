@@ -81,10 +81,12 @@ end
 
 def over?(board)
   if won?(board) || draw?(board)
-  return true
-else
-  return false
+    return true
+  else
+    return false
+  end
 end
+
 
 def winner(board)
   if combo = won?(board)
