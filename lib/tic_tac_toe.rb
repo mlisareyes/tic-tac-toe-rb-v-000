@@ -45,7 +45,6 @@ def turn(board)
   display_board(board
 end
 
-
 def turn_count(board)
   board.count do |position|
     position == "X" || position == "O"
