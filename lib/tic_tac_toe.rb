@@ -80,10 +80,10 @@ def draw?(board)
 end
 
 def over?(board)
-  !won?(board) || full?(board) || draw?(board)
-  return false
-else
+  if won?(board) || draw?(board)
   return true
+else
+  return false
 end
 
 def winner(board)
